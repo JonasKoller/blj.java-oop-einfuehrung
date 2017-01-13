@@ -18,7 +18,7 @@ public class Controller {
     private Label labelNumberOfTryouts;
     /**
      * This ist the number which the user must guess. It is initialized by random
-     * within the initialize method of this controller class.
+     * within the constructor of this controller class.
      */
     private int randomNumber;
     private int countOfTryOuts = 0;
