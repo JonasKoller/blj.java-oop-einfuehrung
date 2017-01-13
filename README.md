@@ -2,8 +2,6 @@
 Eine Einführung in die objektorientierte Programmierung - grösstenteils mit Java/JavaFX und zu einem kleineren Teil auch mit C#.
 Dieser Kurs wurde erstellt für die Ausbildung der Lernenden im [Basislehrjahr der ICT-Berufsbildung Zentralschweiz](http://www.041er-blj.ch).
 
-_12.01.2017 Urs Nussbaumer (urs.nussbaumer@ict-bz.ch)_
-
 ## Beschreibung
 Die Lernenden arbeiten sich in die Grundlagen von Java sowie in die Grundlagen der objektorientierten Programmierung ein. Dazu lösen sie weitgehend selbständig praktische Aufgaben und Übungen. Zu gegebener Zeit und/oder bei Bedarf führt der Berufsbildner Lernsequenzen durch, um die notwendigen theoretischen OOP-Grundlagen zu vermitteln.
 
@@ -67,4 +65,4 @@ Jeder der folgenden Branches repräsentiert eine Aufgabe.
 - 21_waldbrand
 - 22_temperatur-anzeige
 
-
+_Adligenswil, 12.01.2017, Urs Nussbaumer (urs.nussbaumer@ict-bz.ch)_
