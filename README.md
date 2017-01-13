@@ -1,57 +1,48 @@
-# Einführung in Java und OOP
-Eine Einführung in die objektorientierte Programmierung - grösstenteils mit Java/JavaFX und zu einem kleineren Teil auch mit C#.
-Dieser Kurs wurde erstellt für die Ausbildung der Lernenden im [Basislehrjahr der ICT-Berufsbildung Zentralschweiz](http://www.041er-blj.ch).
+# Waldbrand
 
-_12.01.2017 Urs Nussbaumer (urs.nussbaumer@ict-bz.ch)_
 
-## Beschreibung
-Die Lernenden arbeiten sich in die Grundlagen von Java sowie in die Grundlagen der objektorientierten Programmierung ein. Dazu lösen sie weitgehend selbständig praktische Aufgaben und Übungen. Zu gegebener Zeit und/oder bei Bedarf führt der Berufsbildner Lernsequenzen durch, um die notwendigen theoretischen OOP-Grundlagen zu vermitteln.
 
-##Zielgruppe
-Lernende der Informatik mit Schwerpunkt Applikationsentwicklung am Ende des 1. Semesters.
+## Aufgabe
 
-## Handlungsziele
-- Die Lernenden kennen die Java-Entwicklungsumgebung IntelliJ IDEA von jetbrains und können damit einfache JavaFX-Programme erstellen.
-- Die Lernenden können Benutzereingaben auf Richtigkeit prüfen und bei Falscheingaben entsprechende Fehlermeldungen ausgeben.
-- Die Lernenden kennen den Unterschied zwischen implizitem und explizitem Casting und wissen, wie letzteres gemacht wird.
-- Die Lernenden kennen die Grundlagen der objektorientierten Programmierung und können einfache Klassen programmieren, die über Eigenschaften und Methoden verfügen.
-- Die Lernenden kennen das OO-Konzept der Vererbung und können einfache Vererbungshierarchien mit Java implementieren.
-- Die Lernenden können mit eigenen Worten beschreiben, was eine abstrakte Klasse ist.
-- Die Lernenden wissen, wie sie eine Methode einer Vaterklasse überschreiben können und können in eigenen Worten Szenarien umschreiben, in denen das Konzept der Überschreibung von Methoden sinnvoll und nützlich ist.
-- Die Lernenden können mit eigenen Worten beschreiben, was ein Interface ist.
+Dein Programm soll einen Waldbrand simulieren. Zunächst besteht der Wald aus einem rechteckigen Raster (zweidimensionales Feld) aus Bäumen (B), Steinen (S) und leerem Waldboden (-). Die Verteilung, d.h. wo ein Baum, wo ein Stein und wo leerer Waldboden platziert wird, passiert zufällig, wenn der Wald erstellt wird.
+Nach Start der Simulation geschieht über einen Timer gesteuert in jedem Zeitschritt _t_ folgendes:
 
-##Organisation und Ablauf
+- Jeder Baum wird sich mit einer kleinen Wahrscheinlichkeit von _f_ entzünden (Funken, Blitze, weggeworfene Zigarettenstummel, etc.). Brennende Bäume werden mit dem Buchstaben F (Feuer) bezeichnet.
 
-### Hilfsmittel und Unterlagen
-Der ganze Kursinhalt ist in über ein Git-Repository organisiert. Die Unterlagen und die Hilfsmittel (Präsentationen, Theorieskripts, Gruppenarbeiten und Demos) für den Berufsbildner  sind im Branch mit Namen `00_unterlagen-theorie` in den entsprechenden Verzeichnissen abgelegt.
-- 10_Präsentationen
-- 20_Theorie
-- 30_Aufgaben
-- 40_Demos
+- Jeder Baum (B), der einen brennenden Nachbarn (F) hat, wird in jedem Fall auch zu brennen beginnen (F). Jedoch können  Bäume, die im Zeitschritt _t_ zu brennen beginnen, erst im nächsten Zeitschritt (_t + 1_) die umliegenden Bäume entfachen.
 
-###Theorie
-Die Theorie zu Java und vor allem zu OOP wird durch den Berufsbildner im Rahmen von kurzen Ausbildungsequenzen vermittelt.
+- Jeder brennende Baum (F) verglüht, sobald er die umliegenden Bäume entfacht hat.
 
-### Programmierpraxis
-Die praktischen Programmieraufgaben bilden den grössten Teil des vorliegenden Kurses und sind durch die Lernenden selbständig zu lösen. Eine Aufgabe besteht aus einer Grundaufgabe und n Zusatzaufgaben. Die Aufgabenstellung ist im jeweiligen README.MD beschrieben.
-Für jede Aufgabe existiert i.d.R. eine Musterlösung, die im Git-Repository in einem entsprechenden, separaten Branch abgelegt ist.
+- Verglühte Bäume (f) werden schliesslich zu einem leeren Stück Waldboden und damit zu Humus (-).
 
-##  Programm
-Je nach Bildungsstand/Vorwissen werden die Lernenden schneller oder langsamer voran kommen. Als Richtwert seien 9 Tage genannt.
+- Auf jedem leeren Stück Waldboden, respektive Humus (-) wird mit einer geringen Wahrscheinlichkeit _w_ ein neuer Baum (B) wachsen.
 
-|Nr| Programm | Beschreibung / Thema | Hilfsmittel / Unterlagen
-|--|----------|----------------------|--------------------------------
-|1 | Einführung | Der Kursleiter macht eine "Hallo Welt"-Demo mit JavaFX.| IntelliJ IDEA
-|2 | Programmierpraxis | Einstieg in Java: Die Lernenden lösen die Programmieraufgaben 01 bis 06. | IntelliJ IDEA
-|3 | Theorie | Java Grundlagen: Sprachvergleich und Eigenschaften von Java. | 1.1_Java-Grundlagen.pdf (Präsentation)
-|4 | Theorie | OOP-Grundlagen: Was ist OOP? | 1.2_OOP-Grundlagen.pdf (Präsentation)
-|5 | Demo | KontoSample (C#): Klasse, Eigenschaften, Methoden, Konzept der Kapselung | 4.1_KontoSample (Visual Studio Solution)
-|6 | Programmierpraxis | Einstieg in die OOP: Die Lernenden lösen die Programmieraufgaben 10 bis 13. | IntelliJ IDEA
-|7 | Theorie | Klassendiagramm | 1.3_OOP-Klassendiagramm.pdf (Präsentation), 2.1_OO-Entwurf_N0046_M326.pdf (Theorieskript)
-|8 | Einzelarbeit | Analyse-Klassendiagramm I |  3.1-Klassendiagramm-I.pdf (Auftrag)
-|9 | Gruppenarbeit | OOP-Begriffe (er)klären | 1.3_OOP-Klassendiagramm.pdf (Präsentation), Moderationskarten
-|10 | Demo | AnimalSample (C#): Abstrakte Klasse, Konstruktor, Destruktor, Polymorphie | 4.2 AnimalSample (Visual Studio Solution)
-|11 | Einzelarbeit | Analyse-Klassendiagramm II |  3.2-Klassendiagramm-I.pdf (Auftrag)
-|12 | **Programmierpraxis** | **OOP-Vertiefung: Die Lernenden lösen die Programmieraufgaben 20 bis 22** | IntelliJ IDEA
+- Steine (S) können nicht brennen und an deren Stelle wird auch nie ein neues Bäumchen (B) keimen.
+
+Bevor er die Simulation startet, soll der Benutzer die Wahrscheinlichkeiten _f_ (Funkenentzündung) und _w_ (Wachstum) sowie die Breite und die Tiefe des Waldes eingeben können. Nach jedem Zeitschritt wird der Wald neu gezeichnet. Dies kann der Einfachheit halber in einenm TextArea-Control geschehen (siehe Benutzeroberfläche).
+
+
+### Analyse-Klassendiagramm
+
+Das Analyse-Klassendiagramm für diese Aufgabe zeigt die folgende Situation. Orientiere dich bei der Implementation der Lösung an diesem Klassendiagramm.
+
+![](res/klassendiagramm.jpg)
+
+
+
+### Benutzeroberfläche
+
+![](res/gui.jpg)
+
+## Zusatzaufgabe
+Verwende anstelle der Zeichen "B", "F", "f", "S" und "-" Farben, um den Wald zu visualisieren: 
+- Bäume: grün
+- brennende Bäume: rot
+- verglühte Bäume: orange
+- Steine: grau
+- Humus: braun
+
+
+
 
 
