@@ -17,7 +17,7 @@ Implementiere die Temperaturanzeige gemäss dem sogenannten [Observer Pattern](h
 
 ![](res/klassendiagramm.jpg)
 ####Hinweise
-Wenn immer die Temperatur ändert, benachrichtigt der Sensor die Displays, die daraufhin ihre Anzeige anpassen.
+Immer wenn die Temperatur sich ändert, benachrichtigt der Sensor die Displays, die daraufhin ihre Anzeige anpassen.
 
 Wenn Objekte (Observer = Beobachter) an Status-Änderungen von anderen Objekten (Subject) interessiert sind, können sie sich bei diesen Objekten registrieren, um bei Änderungen benachrichtigt zu werden.
 ![](res/messages.jpg)
@@ -32,18 +32,16 @@ Wenn Objekte (Observer = Beobachter) an Status-Änderungen von anderen Objekten 
 Verwende in der konkreten Subject-Klasse eine Liste, um die Referenzen auf die registrierten Observer zu speichern.
 
 ###Custom Controls
-Die Klassen _TemperatureSensor_, _GraphicDisplay_ und _NumericDisplay_ sollen als **Custom Control** implementiert werden. Custom Controls bestehen in der Regel aus mehreren bereits exisitierenden Controls. Zum Beispiel kann der  _TemperatureSensor_  aus einem Rahmen (_Rectangle_) mit Title (_Label_) sowie einem _Slider_ und zwei weiteren Labels für die Anzeige der minimalen respektive maximalen Temperatur gebaut werden.
+Die Klassen _TemperatureSensor_, _GraphicDisplay_ und _NumericDisplay_ sollen jeweils als **Custom Control** implementiert werden. Custom Controls bestehen in der Regel aus mehreren bereits existierenden Controls. Zum Beispiel kann der  _TemperatureSensor_  aus einem Rahmen (_Rectangle_) mit einem Titel (_Label_) sowie einem _Slider_ und zwei weiteren Labels für die Anzeige der minimalen respektive maximalen Temperatur gebaut werden.
 
 Hilfe und Anleitungen zur Erstellung von JavaFX Custom Controls findest du im Internet.
 
-####Die schnell(ere) Tour
+####Die schnelle(re) Tour
 **Vorbereitetes IntelliJ-Projekt**
-Falls dir die Zeit fehlt, um dich in die Erstellung von Custom Controls einzulesen, kannst du ein vorbereitetes IntelliJ-Projekt verwenden, in welchem die beiden Klassen _GraphicDisplay_ und _NumericDisplay_ bereits existieren (im Package "samples.javafx.usercontrols").
-
-Das vorbereitete Projekt ist im Git-Repo mit dem Tag ``Version-mit-UserControl`` versehen (-> git checkout).
+Falls dir die Zeit fehlt, um dich in die Erstellung von Custom Controls einzulesen, kannst du ein vorbereitetes IntelliJ-Projekt verwenden, in welchem die beiden Klassen _GraphicDisplay_ und _NumericDisplay_ bereits als Custom Control existieren (im Package "samples.javafx.usercontrols"). Dieses vorbereitete Projekt ist im Git-Repo mit dem Tag ``Version-mit-UserControl`` versehen (-> checkout).
 
 **Klasse _UserControl_**
-Das vorbereitete IntelliJ-Projekt referenziert eine jar-Library (ictbz-lib.jar). Diese Library beinhaltet die abstrakte Klasse _UserControl_, von  der die Klassen _GraphicDisplay_ und _NumericDisplay_ abgeleitet sind. Die Klasse _TemperatureSensor_ kannst du analog der beiden Observer-Klassen implementieren.
+Das vorbereitete IntelliJ-Projekt referenziert eine jar-Library (ictbz-lib.jar). Diese Library beinhaltet die abstrakte Klasse _UserControl_, von  der die Klassen _GraphicDisplay_ und _NumericDisplay_ abgeleitet sind. Die Klasse _TemperatureSensor_ hingegen existiert noch nicht, du kannst sie analog zu den Display-Klassen implementieren.
 
 ![](res/intellij-project.jpg)
 
