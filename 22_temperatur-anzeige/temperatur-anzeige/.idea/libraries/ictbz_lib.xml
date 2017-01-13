@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ictbz-lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lib/ictbz-lib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
