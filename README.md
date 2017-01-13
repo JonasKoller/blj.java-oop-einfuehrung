@@ -1,57 +1,40 @@
-# Einführung in Java und OOP
-Eine Einführung in die objektorientierte Programmierung - grösstenteils mit Java/JavaFX und zu einem kleineren Teil auch mit C#.
-Dieser Kurs wurde erstellt für die Ausbildung der Lernenden im [Basislehrjahr der ICT-Berufsbildung Zentralschweiz](http://www.041er-blj.ch).
+# FIFO Puffer
 
-_12.01.2017 Urs Nussbaumer (urs.nussbaumer@ict-bz.ch)_
+## Aufgabe
+Programmiere eine Daten-Puffer Klasse namens _FifoPuffer_ mit den Methoden put() und get().
+- `put()` -> schreibt Zahlen in den Puffer
+- `get()` -> liest die Zahlen nach dem “first in first out”- Prinzip (FIFO) wieder aus dem Puffer aus
 
-## Beschreibung
-Die Lernenden arbeiten sich in die Grundlagen von Java sowie in die Grundlagen der objektorientierten Programmierung ein. Dazu lösen sie weitgehend selbständig praktische Aufgaben und Übungen. Zu gegebener Zeit und/oder bei Bedarf führt der Berufsbildner Lernsequenzen durch, um die notwendigen theoretischen OOP-Grundlagen zu vermitteln.
+Bei Instanzierung des Puffers soll die Grösse des Puffers bestimmt werden können. Die Methoden
+Die Methoden put() und get() sollen  sicherstellen, dass sowohl keine Zahl in einen vollen Puffer geschrieben, als auch keine Zahl aus einem leeren Puffer gelesen werden kann; es ist eine entsprechende Mitteilung auszugegeben, falls der Puffer voll respektive leer ist
 
-##Zielgruppe
-Lernende der Informatik mit Schwerpunkt Applikationsentwicklung am Ende des 1. Semesters.
+Die Klasse FifoPuffer soll ausserdem über eine Methode `getAll()` verfügen, die alle sich im Puffer befindlichen Zahlen in der Reihenfolge, wie sie in den Puffer geschrieben worden sind und mit einem Komma getrennt als String zurück gibt.
 
-## Handlungsziele
-- Die Lernenden kennen die Java-Entwicklungsumgebung IntelliJ IDEA von jetbrains und können damit einfache JavaFX-Programme erstellen.
-- Die Lernenden können Benutzereingaben auf Richtigkeit prüfen und bei Falscheingaben entsprechende Fehlermeldungen ausgeben.
-- Die Lernenden kennen den Unterschied zwischen implizitem und explizitem Casting und wissen, wie letzteres gemacht wird.
-- Die Lernenden kennen die Grundlagen der objektorientierten Programmierung und können einfache Klassen programmieren, die über Eigenschaften und Methoden verfügen.
-- Die Lernenden kennen das OO-Konzept der Vererbung und können einfache Vererbungshierarchien mit Java implementieren.
-- Die Lernenden können mit eigenen Worten beschreiben, was eine abstrakte Klasse ist.
-- Die Lernenden wissen, wie sie eine Methode einer Vaterklasse überschreiben können und können in eigenen Worten Szenarien umschreiben, in denen das Konzept der Überschreibung von Methoden sinnvoll und nützlich ist.
-- Die Lernenden können mit eigenen Worten beschreiben, was ein Interface ist.
+Nachfolgender Code zeigt beispielhaft die Verwendung der Puffer-Klasse.
 
-##Organisation und Ablauf
+```Java
+FifoPuffer p = new FifoPuffer (2); // Instanzierung des Puffers, Grösse 2
+int i;
+i = p.get(); // Fehler: Puffer leer
+p.put(1);    // 1 geht in Puffer
+p.put(2);    // 2 geht in Puffer
+p.put(3);    // Fehler: Puffer voll
+i = p.get(); // i=1
+p.put(4);    // 4 geht in Puffer
+```
 
-### Hilfsmittel und Unterlagen
-Der ganze Kursinhalt ist in über ein Git-Repository organisiert. Die Unterlagen und die Hilfsmittel (Präsentationen, Theorieskripts, Gruppenarbeiten und Demos) für den Berufsbildner  sind im Branch mit Namen `00_unterlagen-theorie` in den entsprechenden Verzeichnissen abgelegt.
-- 10_Präsentationen
-- 20_Theorie
-- 30_Aufgaben
-- 40_Demos
+### Benutzeroberfläche
+Um die FifoPuffer-Klasse zu testen, soll ein JavaFX-GUI erstellt werden, bspw. wie folgt:
 
-###Theorie
-Die Theorie zu Java und vor allem zu OOP wird durch den Berufsbildner im Rahmen von kurzen Ausbildungsequenzen vermittelt.
+![](res/gui.jpg)
 
-### Programmierpraxis
-Die praktischen Programmieraufgaben bilden den grössten Teil des vorliegenden Kurses und sind durch die Lernenden selbständig zu lösen. Eine Aufgabe besteht aus einer Grundaufgabe und n Zusatzaufgaben. Die Aufgabenstellung ist im jeweiligen README.MD beschrieben.
-Für jede Aufgabe existiert i.d.R. eine Musterlösung, die im Git-Repository in einem entsprechenden, separaten Branch abgelegt ist.
+####Fehlermeldung "Puffer voll"
 
-##  Programm
-Je nach Bildungsstand/Vorwissen werden die Lernenden schneller oder langsamer voran kommen. Als Richtwert seien 9 Tage genannt.
+![](res/fehler-voll.jpg)
 
-|Nr| Programm | Beschreibung / Thema | Hilfsmittel / Unterlagen
-|--|----------|----------------------|--------------------------------
-|1 | Einführung | Der Kursleiter macht eine "Hallo Welt"-Demo mit JavaFX.| IntelliJ IDEA
-|2 | Programmierpraxis | Einstieg in Java: Die Lernenden lösen die Programmieraufgaben 01 bis 06. | IntelliJ IDEA
-|3 | Theorie | Java Grundlagen: Sprachvergleich und Eigenschaften von Java. | 1.1_Java-Grundlagen.pdf (Präsentation)
-|4 | Theorie | OOP-Grundlagen: Was ist OOP? | 1.2_OOP-Grundlagen.pdf (Präsentation)
-|5 | Demo | KontoSample (C#): Klasse, Eigenschaften, Methoden, Konzept der Kapselung | 4.1_KontoSample (Visual Studio Solution)
-|**6** | **Programmierpraxis** | **Einstieg in die OOP: Die Lernenden lösen die Programmieraufgaben 10 bis 13.** | IntelliJ IDEA
-|7 | Theorie | Klassendiagramm | 1.3_OOP-Klassendiagramm.pdf (Präsentation), 2.1_OO-Entwurf_N0046_M326.pdf (Theorieskript)
-|8 | Einzelarbeit | Analyse-Klassendiagramm I |  3.1-Klassendiagramm-I.pdf (Auftrag)
-|9 | Gruppenarbeit | OOP-Begriffe (er)klären | 1.3_OOP-Klassendiagramm.pdf (Präsentation), Moderationskarten
-|10 | Demo | AnimalSample (C#): Abstrakte Klasse, Konstruktor, Destruktor, Polymorphie | 4.2 AnimalSample (Visual Studio Solution)
-|11 | Einzelarbeit | Analyse-Klassendiagramm II |  3.2-Klassendiagramm-I.pdf (Auftrag)
-|12 | Programmierpraxis | OOP-Vertiefung: Die Lernenden lösen die Programmieraufgaben 20 bis 22 | IntelliJ IDEA
+####Fehlermeldung "Puffer leer"
 
+![](res/fehler-leer.jpg)
 
+###Hinweis
+Es dürfen **keine** Klassen aus dem `java.util` Package verwendet werden!
