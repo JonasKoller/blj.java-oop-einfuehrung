@@ -70,5 +70,5 @@ LocalDate today = LocalDate.now();
 System.out.println(today);  // 2016-10-02 (gegeben heute sei der 2. Oktober 2016)
 ```
 
-**Weitere Informationen und Hilfe zur neuen Java Date-Time API findest Du im Internet, z.B. in der [Java-Referenz](https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html).**
+**!!! Weitere Informationen und Hilfe zur neuen Java Date-Time API findest Du im Internet, z.B. in der [Java-Referenz](https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html).**
 
