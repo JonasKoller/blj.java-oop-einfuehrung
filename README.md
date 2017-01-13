@@ -21,20 +21,20 @@ Lernende der Informatik mit Schwerpunkt Applikationsentwicklung am Ende des 1. S
 ###  Programm
 Je nach Bildungsstand/Vorwissen werden die Lernenden schneller oder langsamer voran kommen. Als Richtwert seien 9 Tage genannt.
 
-|Nr| Programm | Beschreibung / Thema | Hilfsmittel / Unterlagen
-|--|----------|----------------------|--------------------------------
-|1 | Einführung | Der Kursleiter macht eine "Hallo Welt"-Demo mit JavaFX.| IntelliJ IDEA
-|2 | Programmierpraxis | Einstieg in Java: Die Lernenden lösen die Programmieraufgaben 01 bis 06. | IntelliJ IDEA
-|3 | Theorie | Java Grundlagen: Sprachvergleich und Eigenschaften von Java. | 1.1_Java-Grundlagen.pdf (Präsentation)
-|4 | Theorie | OOP-Grundlagen: Was ist OOP? | 1.2_OOP-Grundlagen.pdf (Präsentation)
-|5 | Demo | KontoSample (C#): Klasse, Eigenschaften, Methoden, Konzept der Kapselung | 4.1_KontoSample (Visual Studio Solution)
-|6 | Programmierpraxis | Einstieg in die OOP: Die Lernenden lösen die Programmieraufgaben 10 bis 13. | IntelliJ IDEA
-|7 | Theorie | Klassendiagramm | 1.3_OOP-Klassendiagramm.pdf (Präsentation), 2.1_OO-Entwurf_N0046_M326.pdf (Theorieskript)
-|8 | Einzelarbeit | Analyse-Klassendiagramm I |  3.1-Klassendiagramm-I.pdf (Auftrag)
-|9 | Gruppenarbeit | OOP-Begriffe (er)klären | 1.3_OOP-Klassendiagramm.pdf (Präsentation), Moderationskarten
-|10 | Demo | AnimalSample (C#): Abstrakte Klasse, Konstruktor, Destruktor, Polymorphie | 4.2 AnimalSample (Visual Studio Solution)
-|11 | Einzelarbeit | Analyse-Klassendiagramm II |  3.2-Klassendiagramm-I.pdf (Auftrag)
-|12 | Programmierpraxis | OOP-Vertiefung: Die Lernenden lösen die Programmieraufgaben 20 bis 22 | IntelliJ IDEA
+|Nr| Programm | Beschreibung / Thema | Hilfsmittel / Unterlagen |
+|--|----------|----------------------|--------------------------------|
+|1 | Einführung | Der Kursleiter macht eine "Hallo Welt"-Demo mit JavaFX.| IntelliJ IDEA |
+|2 | Programmierpraxis | Einstieg in Java: Die Lernenden lösen die Programmieraufgaben 01 bis 06. | IntelliJ IDEA |
+|3 | Theorie | Java Grundlagen: Sprachvergleich und Eigenschaften von Java. | 1.1_Java-Grundlagen.pdf (Präsentation) |
+|4 | Theorie | OOP-Grundlagen: Was ist OOP? | 1.2_OOP-Grundlagen.pdf (Präsentation) |
+|5 | Demo | KontoSample (C#): Klasse, Eigenschaften, Methoden, Konzept der Kapselung | 4.1_KontoSample (Visual Studio Solution) |
+|6 | Programmierpraxis | Einstieg in die OOP: Die Lernenden lösen die Programmieraufgaben 10 bis 13. | IntelliJ IDEA |
+|7 | Theorie | Klassendiagramm | 1.3_OOP-Klassendiagramm.pdf (Präsentation), 2.1_OO-Entwurf_N0046_M326.pdf (Theorieskript) |
+|8 | Einzelarbeit | Analyse-Klassendiagramm I |  3.1-Klassendiagramm-I.pdf (Auftrag) |
+|9 | Gruppenarbeit | OOP-Begriffe (er)klären | 1.3_OOP-Klassendiagramm.pdf (Präsentation), Moderationskarten |
+|10 | Demo | AnimalSample (C#): Abstrakte Klasse, Konstruktor, Destruktor, Polymorphie | 4.2 AnimalSample (Visual Studio Solution) |
+|11 | Einzelarbeit | Analyse-Klassendiagramm II |  3.2-Klassendiagramm-I.pdf (Auftrag) |
+|12 | Programmierpraxis | OOP-Vertiefung: Die Lernenden lösen die Programmieraufgaben 20 bis 22 | IntelliJ IDEA |
 
 ### Hilfsmittel und Unterlagen
 Der ganze Kursinhalt ist in über ein Git-Repository organisiert. Die Unterlagen und die Hilfsmittel (Präsentationen, Theorieskripts, Gruppenarbeiten und Demos) für den Berufsbildner  sind im Branch mit Namen `00_unterlagen-theorie` in den entsprechenden Verzeichnissen abgelegt.
