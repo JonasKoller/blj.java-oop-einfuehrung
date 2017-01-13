@@ -20,23 +20,7 @@ Lernende der Informatik mit Schwerpunkt Applikationsentwicklung am Ende des 1. S
 - Die Lernenden wissen, wie sie eine Methode einer Vaterklasse überschreiben können und können in eigenen Worten Szenarien umschreiben, in denen das Konzept der Überschreibung von Methoden sinnvoll und nützlich ist.
 - Die Lernenden können mit eigenen Worten beschreiben, was ein Interface ist.
 
-##Organisation und Ablauf
-
-### Hilfsmittel und Unterlagen
-Der ganze Kursinhalt ist in über ein Git-Repository organisiert. Die Unterlagen und die Hilfsmittel (Präsentationen, Theorieskripts, Gruppenarbeiten und Demos) für den Berufsbildner  sind im Branch mit Namen `00_unterlagen-theorie` in den entsprechenden Verzeichnissen abgelegt.
-- 10_Präsentationen
-- 20_Theorie
-- 30_Aufgaben
-- 40_Demos
-
-###Theorie
-Die Theorie zu Java und vor allem zu OOP wird durch den Berufsbildner im Rahmen von kurzen Ausbildungsequenzen vermittelt.
-
-### Programmierpraxis
-Die praktischen Programmieraufgaben bilden den grössten Teil des vorliegenden Kurses und sind durch die Lernenden selbständig zu lösen. Eine Aufgabe besteht aus einer Grundaufgabe und n Zusatzaufgaben. Die Aufgabenstellung ist im jeweiligen README.MD beschrieben.
-Für jede Aufgabe existiert i.d.R. eine Musterlösung, die im Git-Repository in einem entsprechenden, separaten Branch abgelegt ist.
-
-##  Programm
+###  Programm
 Je nach Bildungsstand/Vorwissen werden die Lernenden schneller oder langsamer voran kommen. Als Richtwert seien 9 Tage genannt.
 
 |Nr| Programm | Beschreibung / Thema | Hilfsmittel / Unterlagen
@@ -53,5 +37,34 @@ Je nach Bildungsstand/Vorwissen werden die Lernenden schneller oder langsamer vo
 |10 | Demo | AnimalSample (C#): Abstrakte Klasse, Konstruktor, Destruktor, Polymorphie | 4.2 AnimalSample (Visual Studio Solution)
 |11 | Einzelarbeit | Analyse-Klassendiagramm II |  3.2-Klassendiagramm-I.pdf (Auftrag)
 |12 | Programmierpraxis | OOP-Vertiefung: Die Lernenden lösen die Programmieraufgaben 20 bis 22 | IntelliJ IDEA
+
+### Hilfsmittel und Unterlagen
+Der ganze Kursinhalt ist in über ein Git-Repository organisiert. Die Unterlagen und die Hilfsmittel (Präsentationen, Theorieskripts, Gruppenarbeiten und Demos) für den Berufsbildner  sind im Branch mit Namen `00_unterlagen-theorie` in den entsprechenden Verzeichnissen abgelegt.
+- 10_Präsentationen
+- 20_Theorie
+- 30_Aufgaben
+- 40_Demos
+
+###Theorie
+Die Theorie zu Java und - vor allem - zu OOP wird durch den Berufsbildner im Rahmen von kurzen Ausbildungsequenzen vermittelt.
+
+### Programmierpraxis
+Die praktischen Programmieraufgaben bilden den grössten Teil des vorliegenden Kurses und sind durch die Lernenden selbständig zu lösen. Eine Aufgabe besteht aus einer Grundaufgabe und n Zusatzaufgaben. Jede Aufgabenstellung ist in einem README.MD beschrieben und in einem separaten Branch im Git-Repo abgelegt. Und für jede Aufgabe existiert ausserdem eine Musterlösung.
+
+####Aufgaben
+Jeder der folgenden Branches repräsentiert eine Aufgabe.
+- 01_hello-world
+- 02_flaeche-rechteck
+- 03_reisedauer-mond
+- 04_zahlen-raten
+- 05_alter-berechnen
+- 06_dateiname-extrahieren
+- 10_tannenbaum
+- 11_fifo-puffer
+- 12_instanzen-zaehler
+- 13_morse-code
+- 20_verkettete-liste
+- 21_waldbrand
+- 22_temperatur-anzeige
 
 
