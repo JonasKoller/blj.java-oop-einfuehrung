@@ -38,7 +38,7 @@ Hilfe und Anleitungen zur Erstellung von JavaFX Custom Controls findest du im In
 
 ####Die schnelle(re) Tour
 **Vorbereitetes IntelliJ-Projekt**
-Falls dir die Zeit fehlt, um dich in die Erstellung von Custom Controls einzulesen, kannst du ein vorbereitetes IntelliJ-Projekt verwenden, in welchem die beiden Klassen _GraphicDisplay_ und _NumericDisplay_ bereits als Custom Control existieren (im Package "samples.javafx.usercontrols"). Dieses vorbereitete Projekt ist im Git-Repo mit dem Tag ``Version-mit-UserControl`` versehen (-> checkout).
+Falls dir die Zeit fehlt, um dich in die Erstellung von Custom Controls einzulesen, kannst du ein vorbereitetes IntelliJ-Projekt verwenden, in welchem die beiden Klassen _GraphicDisplay_ und _NumericDisplay_ bereits als Custom Control existieren (im Package "samples.javafx.usercontrols"). Dieses vorbereitete Projekt ist im Git-Repo mit dem Tag ``Version-mit-UserControl`` versehen.
 
 **Klasse _UserControl_**
 Das vorbereitete IntelliJ-Projekt referenziert eine jar-Library (ictbz-lib.jar). Diese Library beinhaltet die abstrakte Klasse _UserControl_, von  der die Klassen _GraphicDisplay_ und _NumericDisplay_ abgeleitet sind. Die Klasse _TemperatureSensor_ hingegen existiert noch nicht, du kannst sie analog zu den Display-Klassen implementieren.
@@ -47,7 +47,7 @@ Das vorbereitete IntelliJ-Projekt referenziert eine jar-Library (ictbz-lib.jar).
 
 
 
-**Komplettes Klassendiagramm (inkl. UserControl)** 
+**Komplettes Klassendiagramm (inkl. UserControl)**
 
 ![](res/klassendiagramm-2.jpg)
 
