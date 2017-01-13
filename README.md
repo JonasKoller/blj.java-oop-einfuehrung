@@ -42,7 +42,7 @@ Je nach Bildungsstand/Vorwissen werden die Lernenden schneller oder langsamer vo
 |Nr| Programm | Beschreibung / Thema | Hilfsmittel / Unterlagen
 |--|----------|----------------------|--------------------------------
 |1 | Einführung | Der Kursleiter macht eine "Hallo Welt"-Demo mit JavaFX.| IntelliJ IDEA
-|2 | Programmierpraxis | Einstieg in Java: Die Lernenden lösen die Programmieraufgaben 00 bis 06. | IntelliJ IDEA
+|**2** | **Programmierpraxis** | **Einstieg in Java: Die Lernenden lösen die Programmieraufgaben 01 bis 06.** | IntelliJ IDEA
 |3 | Theorie | Java Grundlagen: Sprachvergleich und Eigenschaften von Java. | 1.1_Java-Grundlagen.pdf (Präsentation)
 |4 | Theorie | OOP-Grundlagen: Was ist OOP? | 1.2_OOP-Grundlagen.pdf (Präsentation)
 |5 | Demo | KontoSample (C#): Klasse, Eigenschaften, Methoden, Konzept der Kapselung | 4.1_KontoSample (Visual Studio Solution)
